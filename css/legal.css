@@ -1,0 +1,136 @@
+/* Legal Pages Styles */
+main {
+  padding: var(--spacing-xl) 0;
+  min-height: 80vh;
+}
+
+.legal-content {
+  max-width: 800px;
+  margin: 0 auto;
+  background: var(--background-white);
+  padding: var(--spacing-xl);
+  border-radius: var(--border-radius);
+  box-shadow: var(--shadow-light);
+}
+
+.legal-section {
+  margin-bottom: var(--spacing-xl);
+}
+
+.legal-section:last-child {
+  margin-bottom: 0;
+}
+
+.legal-section h2 {
+  color: var(--slime-green);
+  margin-bottom: var(--spacing-md);
+  font-size: 1.5rem;
+}
+
+.legal-section h3 {
+  color: var(--text-dark);
+  margin-bottom: var(--spacing-sm);
+  font-size: 1.2rem;
+  margin-top: var(--spacing-lg);
+}
+
+.legal-section p {
+  margin-bottom: var(--spacing-md);
+  line-height: 1.7;
+  color: var(--text-light);
+}
+
+.legal-section ul {
+  margin-bottom: var(--spacing-md);
+  padding-left: var(--spacing-lg);
+}
+
+.legal-section li {
+  margin-bottom: var(--spacing-xs);
+  line-height: 1.6;
+  color: var(--text-light);
+}
+
+.legal-section strong {
+  color: var(--text-dark);
+  font-weight: bold;
+}
+
+.cookie-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: var(--spacing-md) 0;
+}
+
+.cookie-table th,
+.cookie-table td {
+  padding: var(--spacing-sm);
+  text-align: left;
+  border-bottom: 1px solid #e1e5e9;
+}
+
+.cookie-table th {
+  background-color: var(--slime-green);
+  color: white;
+  font-weight: bold;
+}
+
+.cookie-table tr:hover {
+  background-color: #f8f9fa;
+}
+
+.last-updated {
+  text-align: center;
+  font-style: italic;
+  color: var(--slime-blue);
+  margin-top: var(--spacing-lg);
+  padding-top: var(--spacing-md);
+  border-top: 1px solid #e1e5e9;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .legal-content {
+    padding: var(--spacing-lg);
+    margin: 0 var(--spacing-sm);
+  }
+
+  .legal-section h2 {
+    font-size: 1.3rem;
+  }
+
+  .legal-section h3 {
+    font-size: 1.1rem;
+  }
+
+  .cookie-table {
+    font-size: 0.9rem;
+  }
+
+  .cookie-table th,
+  .cookie-table td {
+    padding: var(--spacing-xs);
+  }
+}
+
+@media (max-width: 360px) {
+  .legal-content {
+    padding: var(--spacing-md);
+  }
+
+  .legal-section h2 {
+    font-size: 1.2rem;
+  }
+
+  .legal-section h3 {
+    font-size: 1rem;
+  }
+
+  .legal-section ul {
+    padding-left: var(--spacing-md);
+  }
+
+  .cookie-table {
+    font-size: 0.8rem;
+  }
+}
